@@ -1,0 +1,11 @@
+DROP SCHEMA IF EXISTS user_schema;
+CREATE SCHEMA user_schema;
+USE user_schema;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+   id INT NOT NULL  AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
+   name VARCHAR(32) NOT NULL COMMENT 'ユーザー名',
+   age INT NOT NULL COMMENT '年齢'
+);
