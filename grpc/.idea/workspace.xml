@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a61351f8-f657-4a9a-86b5-5cce79e25a6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/bi_directional_streaming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client_streaming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/server_streaming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/unary.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codegen.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protoc/greeter.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bi_directional_streaming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/client_streaming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server_streaming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/unary.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grpc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -58,16 +43,24 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +75,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/masakizk/go/grpc/client">
+  <component name="RunManager" selected="npm.codegen">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="go build github.com/masakizk/go/grpc/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="grpc" />
       <working_directory value="$PROJECT_DIR$" />
@@ -101,8 +107,19 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="codegen" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="codegen" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.codegen" />
         <item itemvalue="Go Build.go build github.com/masakizk/go/grpc/client" />
         <item itemvalue="Go Build.go build github.com/masakizk/go/grpc/server" />
       </list>
@@ -121,7 +138,8 @@
       <workItem from="1616283556893" duration="568000" />
       <workItem from="1616284128911" duration="1911000" />
       <workItem from="1616286865529" duration="478000" />
-      <workItem from="1616368111058" duration="405000" />
+      <workItem from="1616368111058" duration="2956000" />
+      <workItem from="1618030976194" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1616208222341</created>
@@ -130,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616208222341</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: implemented server-client grpc project">
+      <created>1616369073334</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616369073334</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="feat: implemented server-client grpc project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented server-client grpc project" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
